@@ -1,4 +1,11 @@
-# pydiff - A Minimalistic Difflib GUI
+# pydiff - A Minimalistic Difflib GUI for Encrypted, Compressed, or plain text files
+
+This is a Puren Tonbo enabled tool ptdiff_tk https://github.com/clach04/puren_tonbo/issues/141 based on https://github.com/yelsayd/pydiff
+
+Install Puren Tonbo, then use `ptdiff_tk.py`, e.g.`ptdiff_tk.py file1.gz file2.gz`
+
+-----
+
 An open source Tkinter GUI for python's difflib comparing two text files or two directory trees, complete with highlighting of differences and line numbers.
 
 <p align="center">
