@@ -215,10 +215,12 @@ class MainWindow:
         try:
             leftFileContents = open(self.leftFile).read()
         except:
+            raise  # minimal code change quick hack: so that this sanely fails with reasons/explanation
             leftFileContents = ''
         try:
             rightFileContents = open(self.rightFile).read()
         except:
+            raise  # minimal code change quick hack: so that this sanely fails with reasons/explanation
             rightFileContents = ''
 
         diff = DifflibParser(leftFileContents.splitlines(), rightFileContents.splitlines())
@@ -308,6 +310,7 @@ class MainWindow:
                 linenumber = int(line)
                 self.__main_window_ui.leftFileTextArea.see(float(linenumber) + 5)
             except:
+                raise  # minimal code change quick hack: so that this sanely fails with reasons/explanation - NOTE untested
                 pass
 
     def __startFindText(self):
